@@ -7,22 +7,22 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("22906517"))
+API_HASH = getenv("1cf16ce3d5f8f52fbba910829cf8af12")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("7318180250:AAHV1AwMUpslNHpjIAmPd79WRiQYnmTdeag")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("mongodb+srv://ANKIT009:ANKIT009@cluster0.tjcrg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", None)
 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 60))
+DURATION_LIMIT_MIN = int(getenv("60", 60))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", None))
+LOGGER_ID = int(getenv("-1002444359388", None))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 1356469075))
+OWNER_ID = int(getenv("7660207251", 1356469075))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -56,12 +56,12 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 25))
 
 
 # Telegram audio and video file size limit (in bytes)
-TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", 104857600))
-TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
+TG_AUDIO_FILESIZE_LIMIT = int(getenv("104857600", 104857600))
+TG_VIDEO_FILESIZE_LIMIT = int(getenv("1073741824", 1073741824))
 # Checkout https://www.gbmb.org/mb-to-bytes for converting mb to bytes
 
 
-# Get your pyrogram v2 session from @StringFatherBot on Telegram
+BQFdhpUARpvj0SVYXzbaZiX2_xCrVZ7vSqU-L8pUsiB833dOsDKREUUKcEETpM-w_GE-whfIi_Etsi8kmVXd1j71X9ZOdPvsfjFz7hryzaa4-SIv-WfcIiL6UBGeL5ZNCx0teFLZccZjSNMri7uKnEGG6AWiugX1Rj8kHUc5Nx4l0DlxcCEJMhWHnHB1I4ytbdDjCc5NUTS8TfvdqNqbZQLBph5GrGJ9yS68Q9HwOO4wj3A8gY0uaN1un1xKQ5Er-8H-kd8O39eBR3AGqoaabZ8FF5EuXZ_RopTxLZwhjB0jnK_2FTlcZg5yIA7dyipxfCqpzivTgP55qNilZBfWvYs3xvsYrwAAAAHIlXyTAA# Get your pyrogram v2 session from @StringFatherBot on Telegram
 STRING1 = getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
@@ -104,13 +104,13 @@ DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
 
 
 if SUPPORT_CHANNEL:
-    if not re.match("(?:http|https)://", SUPPORT_CHANNEL):
+    if not re.match("(?:http|https://t.me/HEART_ZONEE)://", SUPPORT_CHANNEL):
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHANNEL url is wrong. Please ensure that it starts with https://"
         )
 
 if SUPPORT_CHAT:
-    if not re.match("(?:http|https)://", SUPPORT_CHAT):
+    if not re.match("(?:http|https://t.me/HEART_ZONEE)://", SUPPORT_CHAT):
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHAT url is wrong. Please ensure that it starts with https://"
         )
